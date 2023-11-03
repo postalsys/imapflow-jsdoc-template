@@ -1,3 +1,5 @@
+> Forked from https://github.com/braintree/jsdoc-template
+
 # Braintree JSDoc Template
 
 A clean, responsive documentation template with search and navigation highlighting for JSDoc 3. Forked from [github.com/nijikokun/minami](https://github.com/nijikokun/minami).
@@ -17,7 +19,6 @@ A clean, responsive documentation template with search and navigation highlighti
 ## Usage
 
 Clone repository to your designated `jsdoc` template directory, then:
-
 
 ### Node.js Dependency
 
@@ -41,33 +42,31 @@ In your `.jsdoc.json` file, add a template option.
 
 ```json
 {
-    "tags": {
-        "allowUnknownTags": true,
-        "dictionaries": ["jsdoc"]
-    },
-    "source": {
-        "include": ["lib", "package.json", "README.md"],
-        "includePattern": ".js$",
-        "excludePattern": "(node_modules/|docs)"
-    },
-    "plugins": [
-        "plugins/markdown"
-    ],
-    "templates": {
-        "referenceTitle": "My SDK Name",
-        "disableSort": false,
-        "collapse": true,
-        "resources": {
-            "google": "https://www.google.com/"
-        }
-    },
-    "opts": {
-        "destination": "./docs/",
-        "encoding": "utf8",
-        "private": true,
-        "recurse": true,
-        "template": "./node_modules/jsdoc-template"
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc"]
+  },
+  "source": {
+    "include": ["lib", "package.json", "README.md"],
+    "includePattern": ".js$",
+    "excludePattern": "(node_modules/|docs)"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "referenceTitle": "My SDK Name",
+    "disableSort": false,
+    "collapse": true,
+    "resources": {
+      "google": "https://www.google.com/"
     }
+  },
+  "opts": {
+    "destination": "./docs/",
+    "encoding": "utf8",
+    "private": true,
+    "recurse": true,
+    "template": "./node_modules/jsdoc-template"
+  }
 }
 ```
 

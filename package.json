@@ -1,6 +1,6 @@
 {
   "name": "imapflow-jsdoc-template",
-  "version": "3.4.0-imapflow.1",
+  "version": "3.4.0-imapflow.2",
   "description": "Braintree JSDoc 3 Template",
   "main": "publish.js",
   "files": [
